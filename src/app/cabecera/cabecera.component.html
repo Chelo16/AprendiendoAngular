@@ -1,0 +1,28 @@
+<div class="bg-dark text-white">
+    <h1>Encabezado</h1>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" [routerLink]="['/']">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/']">Inicio</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/nosotros']">Nosotros</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" role="search">
+          <input class="form-control my-2 mr-sm-0" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 active" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
